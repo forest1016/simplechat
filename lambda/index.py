@@ -8,7 +8,7 @@ def lambda_handler(event, context):
         body = json.loads(event['body'])
         user_message = body['message']
 
-        # Colab上のFastAPIのURL（ご自身の ngrok URL に置き換えてください）
+        # Colab上のFastAPIのURL
         url = "https://26dd-34-80-1-154.ngrok-free.app/chat"
         data = json.dumps({"message": user_message}).encode("utf-8")
 
